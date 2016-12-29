@@ -294,8 +294,6 @@ pub struct _G_fpos64_t {
 impl ::std::default::Default for _G_fpos64_t {
     fn default() -> Self { unsafe { ::std::mem::zeroed() } }
 }
-pub type va_list = __gnuc_va_list;
-pub type __gnuc_va_list = __builtin_va_list;
 pub enum _IO_jump_t { }
 pub type _IO_lock_t = ::std::os::raw::c_void;
 #[repr(C)]
@@ -800,13 +798,6 @@ extern "C" {
     pub fn _IO_flockfile(arg1: *mut _IO_FILE);
     pub fn _IO_funlockfile(arg1: *mut _IO_FILE);
     pub fn _IO_ftrylockfile(arg1: *mut _IO_FILE) -> ::std::os::raw::c_int;
-    pub fn _IO_vfscanf(arg1: *mut _IO_FILE,
-                       arg2: *const ::std::os::raw::c_char,
-                       arg3: __gnuc_va_list, arg4: *mut ::std::os::raw::c_int)
-     -> ::std::os::raw::c_int;
-    pub fn _IO_vfprintf(arg1: *mut _IO_FILE,
-                        arg2: *const ::std::os::raw::c_char,
-                        arg3: __gnuc_va_list) -> ::std::os::raw::c_int;
     pub fn _IO_padn(arg1: *mut _IO_FILE, arg2: ::std::os::raw::c_int,
                     arg3: __ssize_t) -> __ssize_t;
     pub fn _IO_sgetn(arg1: *mut _IO_FILE, arg2: *mut ::std::os::raw::c_void,
@@ -864,22 +855,9 @@ extern "C" {
     pub fn sprintf(__s: *mut ::std::os::raw::c_char,
                    __format: *const ::std::os::raw::c_char, ...)
      -> ::std::os::raw::c_int;
-    pub fn vfprintf(__s: *mut FILE, __format: *const ::std::os::raw::c_char,
-                    __arg: __gnuc_va_list) -> ::std::os::raw::c_int;
-    pub fn vprintf(__format: *const ::std::os::raw::c_char,
-                   __arg: __gnuc_va_list) -> ::std::os::raw::c_int;
-    pub fn vsprintf(__s: *mut ::std::os::raw::c_char,
-                    __format: *const ::std::os::raw::c_char,
-                    __arg: __gnuc_va_list) -> ::std::os::raw::c_int;
     pub fn snprintf(__s: *mut ::std::os::raw::c_char, __maxlen: size_t,
                     __format: *const ::std::os::raw::c_char, ...)
      -> ::std::os::raw::c_int;
-    pub fn vsnprintf(__s: *mut ::std::os::raw::c_char, __maxlen: size_t,
-                     __format: *const ::std::os::raw::c_char,
-                     __arg: __gnuc_va_list) -> ::std::os::raw::c_int;
-    pub fn vdprintf(__fd: ::std::os::raw::c_int,
-                    __fmt: *const ::std::os::raw::c_char,
-                    __arg: __gnuc_va_list) -> ::std::os::raw::c_int;
     pub fn dprintf(__fd: ::std::os::raw::c_int,
                    __fmt: *const ::std::os::raw::c_char, ...)
      -> ::std::os::raw::c_int;
@@ -891,13 +869,6 @@ extern "C" {
     pub fn sscanf(__s: *const ::std::os::raw::c_char,
                   __format: *const ::std::os::raw::c_char, ...)
      -> ::std::os::raw::c_int;
-    pub fn vfscanf(__s: *mut FILE, __format: *const ::std::os::raw::c_char,
-                   __arg: __gnuc_va_list) -> ::std::os::raw::c_int;
-    pub fn vscanf(__format: *const ::std::os::raw::c_char,
-                  __arg: __gnuc_va_list) -> ::std::os::raw::c_int;
-    pub fn vsscanf(__s: *const ::std::os::raw::c_char,
-                   __format: *const ::std::os::raw::c_char,
-                   __arg: __gnuc_va_list) -> ::std::os::raw::c_int;
     pub fn fgetc(__stream: *mut FILE) -> ::std::os::raw::c_int;
     pub fn getc(__stream: *mut FILE) -> ::std::os::raw::c_int;
     pub fn getchar() -> ::std::os::raw::c_int;
