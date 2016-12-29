@@ -1,8 +1,10 @@
 [package]
 name = "libdc1394-sys"
-description = "bindings to the libdc1394 library"
+description = "FFI bindings for libdc1394"
 version = "0.1.0"
 authors = ["Andrew Straw <strawman@astraw.com>"]
+keywords = ["libdc1394", "system", "bindings"]
+
 build = "build.rs"
 links = "dc1394"
 
