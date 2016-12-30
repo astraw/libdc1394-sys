@@ -121,11 +121,11 @@ pub struct dc1394video_modes_t {
 impl ::std::default::Default for dc1394video_modes_t {
     fn default() -> Self { unsafe { ::std::mem::zeroed() } }
 }
-#[derive(Copy, Clone)]
+#[derive(Copy, Clone, PartialEq)]
 #[repr(u32)]
 #[derive(Debug)]
 pub enum dc1394bool_t { DC1394_FALSE = 0, DC1394_TRUE = 1, }
-#[derive(Copy, Clone)]
+#[derive(Copy, Clone, PartialEq)]
 #[repr(u32)]
 #[derive(Debug)]
 pub enum dc1394switch_t { DC1394_OFF = 0, DC1394_ON = 1, }
