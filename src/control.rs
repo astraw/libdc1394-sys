@@ -759,6 +759,12 @@ impl ::std::default::Default for __dc1394format7modeset_t {
     fn default() -> Self { unsafe { ::std::mem::zeroed() } }
 }
 pub type dc1394format7modeset_t = __dc1394format7modeset_t;
+
+pub const DC1394_CAPTURE_FLAGS_CHANNEL_ALLOC: uint32_t = 0x00000001;
+pub const DC1394_CAPTURE_FLAGS_BANDWIDTH_ALLOC: uint32_t = 0x00000002;
+pub const DC1394_CAPTURE_FLAGS_DEFAULT: uint32_t = 0x00000004; // a reasonable default value: do bandwidth and channel allocation
+pub const DC1394_CAPTURE_FLAGS_AUTO_ISO: uint32_t = 0x00000008; // automatically start iso before capture and stop it after
+
 extern "C" {
     pub static mut _IO_2_1_stdin_: _IO_FILE_plus;
     pub static mut _IO_2_1_stdout_: _IO_FILE_plus;
