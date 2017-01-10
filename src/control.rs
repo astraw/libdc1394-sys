@@ -669,7 +669,7 @@ pub struct __dc1394_video_frame {
     pub position: [uint32_t; 2usize],
     pub color_coding: dc1394color_coding_t,
     pub color_filter: dc1394color_filter_t,
-    pub yuv_byte_order: uint32_t,
+    pub yuv_byte_order: dc1394byte_order_t,
     pub data_depth: uint32_t,
     pub stride: uint32_t,
     pub video_mode: dc1394video_mode_t,
