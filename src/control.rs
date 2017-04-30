@@ -69,7 +69,7 @@ pub enum dc1394video_mode_t {
     DC1394_VIDEO_MODE_FORMAT7_6 = 94,
     DC1394_VIDEO_MODE_FORMAT7_7 = 95,
 }
-#[derive(Copy, Clone)]
+#[derive(Copy, Clone, PartialEq)]
 #[repr(u32)]
 #[derive(Debug)]
 pub enum dc1394color_coding_t {
