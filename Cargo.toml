@@ -14,4 +14,5 @@ links = "dc1394"
 libusb-sys = "0.2"
 
 [build-dependencies]
-pkg-config = "0.3.8"
+pkg-config = "0.3"
+bindgen = "0.32"

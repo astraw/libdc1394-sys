@@ -9,6 +9,9 @@ for Rust libraries in [RFC #1105](https://github.com/rust-lang/rfcs/blob/master/
 ### Changed
 
 * Depend on `libusb-sys` crate rather than directly linking to libusb ourselves.
+* Generate bindings using `bindgen` at compile time, rather than checked into
+  repo. This also added use of the bindgen option `constified_enum_module` which
+  changes the API of the bindings slightly.
 
 ## [0.1.0] - 2017-04-14
 
