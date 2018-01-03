@@ -20,9 +20,6 @@ fn main() {
             println!("cargo:rustc-link-search=native={}",dir);
             println!("cargo:rustc-link-lib=static=dc1394");
 
-            // should we simply depend on libusb-sys?
-            println!("cargo:rustc-link-lib=static=usb-1.0");
-
             if target.contains("apple-darwin") {
                 println!("cargo:rustc-link-lib=framework=CoreServices");
                 println!("cargo:rustc-link-lib=framework=CoreFoundation");
