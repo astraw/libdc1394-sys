@@ -4,6 +4,16 @@
 
 This crate has FFI bindings to libdc1394.
 
+## Prerequisites
+
+Requires libdc1394-2 and libusb-1.0. On Ubuntu 16.04, this can be installed with
+`apt-get install libdc1394-22-dev libusb-1.0-0-dev`. Also requires Rust
+`bindgen` and `pkg-config` crates and their prerequisites.
+
+## Building
+
+    cargo build
+
 ## License
 
 Licensed under either of
