@@ -10,6 +10,9 @@ repository = "https://github.com/astraw/libdc1394-sys"
 build = "build.rs"
 links = "dc1394"
 
+[badges]
+travis-ci = { repository = "astraw/libdc1394-sys" }
+
 [dependencies]
 libusb-sys = "0.2"
 

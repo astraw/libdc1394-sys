@@ -1,4 +1,4 @@
-# libdc1394-sys - rust FFI bindings for libdc1394 [![Version][version-img]][version-url]
+# libdc1394-sys - rust FFI bindings for libdc1394 [![Version][version-img]][version-url] [![Status][status-img]][status-url]
 
 ## Overview
 
@@ -38,5 +38,7 @@ Anyone who interacts with libdc1394-sys in any space including but not limited t
 this GitHub repository is expected to follow our
 [code of conduct](https://github.com/astraw/libdc1394-sys/blob/master/code_of_conduct.md)
 
+[status-img]: https://travis-ci.org/astraw/libdc1394-sys.svg?branch=master
+[status-url]: https://travis-ci.org/astraw/libdc1394-sys
 [version-img]: https://img.shields.io/crates/v/libdc1394-sys.svg
 [version-url]: https://crates.io/crates/libdc1394-sys
