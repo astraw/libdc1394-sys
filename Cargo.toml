@@ -15,7 +15,3 @@ travis-ci = { repository = "astraw/libdc1394-sys" }
 
 [dependencies]
 libusb-sys = "0.2"
-
-[build-dependencies]
-pkg-config = "0.3"
-bindgen = "0.35"
